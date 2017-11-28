@@ -1,0 +1,36 @@
+#clientes{
+	text-align: center;
+}
+
+#clientes img{
+	width: 100%;
+	height: 100%;
+	max-width: 280px;
+	margin-top: 10px;
+}
+
+#clientes ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#clientes ul li{
+	margin: 15px;
+	width: 100%;
+	max-width: 280px;
+}
+
+#clientes a{
+	text-decoration: none;
+	color: #000000;
+}
+
+#clientes a:hover{
+	color: #585858;
+}
+
+#clientes h2{
+	padding: 10px;
+}

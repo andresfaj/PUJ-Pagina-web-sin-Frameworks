@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+	<meta charset="utf-8">
+	<meta name = "viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+	<title>Contacto</title>
+	<link rel="icon" type="image/png" href="images/cmico.png" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/iot.css">
+	<link rel="stylesheet" type="text/css" href="css/contacto.css">
+</head>
+<body class="body_contacto">
+	<header>
+		<div class="contenedor">
+			<img src="images/cmico.png" alt="codeMaster" class="img_cm" />
+			<h1> codeMaster </h1>
+			<input type="checkbox" id="menu_bar">
+			<label for="menu_bar" id="menu_bardos"></label>
+
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html"> Inicio </a></li>
+					<li><a href="recursos.html"> Recursos </a></li>				
+					<li><a href="acercade.html"> Acerca de </a></li>
+					<li><a href="#"> Contacto </a></li>		
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		
+		<section id="contacto">
+			<div class="contenedor">
+				<form action="https://formspree.io/achuryjaramillo@gmail.com" method="post" id="emailForm">
+					<h2> Contacto </h2>
+					<input class="obligatorio" type="text" name="primernombre" placeholder="Primer nombre" required="" id="pnombre">
+					<input class="obligatorio" type="text" name="segundonombre" placeholder="Segundo nombre" required="" id="snombre">
+					<input class="obligatorio" type="email" name="_replyto" placeholder="Correo eléctronico" required="" id="correo">
+					<input class="obligatorio" type="tel" name="telefono" placeholder="Teléfono" required="" id="telefono">
+					<select>
+						<option value="CO">Colombia</option>
+					  	<option value="VE">Venezuela</option>
+					  	<option value="EC">Ecuador</option>
+					  	<option value="PE">Perú</option>
+					  	<option value="BR">Brasil</option>
+					  	<option value="ME">Mexico</option>
+					  	<option value="AR">Argentina</option>
+					  	<option value="CH">Chile</option>
+					  	<option value="PA">Paraguay</option>
+					  	<option value="UR">Uruguay</option>
+					  	<option value="BO">Bolivia</option>
+					  	<option value="HO">Honduras</option>
+					  	<option value="NI">Nicaragua</option>
+					  	<option value="EU">Estados unidos</option>
+					  	<option value="CA">Canada</option>
+					  	<option value="GU">Guatemala</option>
+					  	<option value="SA">El salvador</option>
+					  	<option value="PM">Panamá</option>
+					</select>
+					<h3> Necesito información de: </h3>
+					<label for=""><input type="checkbox" name="codes" name="servicio" value="Internet of things"> Internet of things</label> 
+					<label for=""><input type="checkbox" name="codes" name="servicio" value="Cognitive Services"> Cognitive Services</label>
+					<label for=""><input type="checkbox" name="codes" name="servicio" value="Big data"> Big data</label>
+					<label for=""><input type="checkbox" name="codes" name="servicio" value="Analytics">Analytics</label>
+					<label for=""><input type="checkbox" name="codep" name="producto" value="Email Encryption client">Email Encryption client</label>
+					<label for=""><input type="checkbox" name="codep" name="producto" value="Minitab">Minitab</label>	
+					<textarea name="mensaje" placeholder="Escriba su mensaje" id="mensaje" ></textarea>
+					<input class="obligatorio" type="submit" value="Enviar" id="btnenviar">
+				</form>			
+			</div>			
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p class="copyright">
+				codeMaster &copy; 2017 Todos los derechos reservados
+			</p>
+			<div class="sociales">
+				<a target="_blank" href="https://www.facebook.com/"><img src="images/facebook-icono.png"></a>
+				<a target="_blank" href="https://www.instagram.com/?hl=es-la"><img src="images/logo-instagram.png"></a>
+				<a target="_blank" href="https://twitter.com/afelipeaj"><img src="images/simbolo-de-twitter.png"></a>
+				<a target="_blank" href="https://plus.google.com/u/0/"><img src="images/simbolo-de-google-plus.png"></a>
+			</div>
+		</div>	 
+	</footer>	
+	<!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>-->
+	<!--<script src="js/contacto.js"></script>-->	
+</body>
+</html>

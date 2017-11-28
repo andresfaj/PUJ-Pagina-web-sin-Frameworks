@@ -1,0 +1,39 @@
+#productos{
+	background: #585858;
+	color: #fff;
+	text-align: center;
+}
+
+#productos img{
+	width: 100%;
+	height: 230px;
+	max-width: 280px;
+	margin-top: 10px;
+}
+
+#productos ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+#productos a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#productos a:hover{
+	color: #000000;
+}
+
+
+#productos ul li{
+	margin: 15px;
+}
+
+#productos h2{
+	text-align: center;
+	padding: 10px;
+}

@@ -1,0 +1,36 @@
+#servicios article{
+	margin: 10px;
+}
+
+#servicios img{
+	width: 100%;
+	height: 250px;
+	max-width: 280px;
+	margin-top: 10px;
+}
+
+#servicios h2, h3{
+	text-align: center;
+}
+
+#servicios ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#servicios ul li{
+	margin: 15px;
+	width: 100%;
+	max-width: 280px;	
+}
+
+#servicios a{
+	text-decoration: none;
+	color: #000000;	
+}
+
+#servicios a:hover{
+	color: #585858;
+}

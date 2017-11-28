@@ -1,0 +1,58 @@
+#infoiot article{
+	margin: 20px;
+	text-align: center;
+}
+#infoiot ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#infoiot h2{
+	padding: 10px;
+}
+
+#infoiot img{
+	margin-top: 10px;	
+	width: 100%;
+	height: 100%;
+	max-width: 280px;
+}
+
+#infoiot p{
+    text-align: justify;
+    font-size: 17px;
+
+}
+
+#infoiot video{
+	width: 100%;
+	height: auto;
+
+}
+
+.caracteristicas li{
+	text-align: left;
+}
+
+#trabaja_con_nosotros{
+	justify-content: center;
+}
+
+
+#trabaja_con_nosotros h2{
+	text-align: center;
+}
+
+select{
+	font-size: 17px;	
+	width: 100%;
+}
+
+@media (max-width:480px) {
+	#trabaja_con_nosotros select{
+		width: 100%;
+	}
+	
+}

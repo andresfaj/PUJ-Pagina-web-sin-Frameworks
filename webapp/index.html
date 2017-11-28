@@ -1,0 +1,98 @@
+<!--By: Andrés Felipe Achury Jaramillo, 2758677-->
+<!-- HTML no distingue las mayusculas y las minusculas-->
+<!-- <nav>: Menu de navegacion, <Header>: Encabezado, <article>: noticias individuales, <section>: union de varios elementos, <aside>:, <footer>: Pie de página -->
+<!-- <em>: Texto en curisva, <strong> Texto en negrilla -->
+<!-- <a> su funcion son los enlances, atributos: download: Descargar un archivo, target = "_blank" para abrir un enlance externo en una página nueva del navegador
+ -->
+ <!-- Etiqueta link se usa para enlaces de archivos.css, atributos: rel = "stylesheet" necesario para incluir el .css, type = "text/css" indica el tipo de recurso, href = "url" se pone la dirección en donde está el .css-->
+ <!-- <ul>: lista no ordenada, <ol> lista ordena, elementos de ambas listas es con <li> -->
+ <!-- <span> tiene como propiedad display:inline, position:static por defecto -->
+<!DOCTYPE html> <!-- Necesario para que el navegador sepa que está leyendo HTML5 -->
+<html lang = "es"> <!-- Elemento raiz -->
+	<head> <!-- información sobre el documento que no es visible en el navegador -->
+		<meta charset="utf-8"> <!-- Es la codificación, utf-8 representa varios carácateres -->
+		<meta name="Descripción" content="Una página web empresarial">
+		<meta name = "viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!--necesario para web responsive-->
+		<title>codeMaster</title>
+		<link rel="icon" type="image/png" href="images/cmico.png" />
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/fontello.css">
+		<link rel="stylesheet" type="text/css" href="css/banner.css">
+		<link rel="stylesheet" type="text/css" href="css/servicios.css">
+		<link rel="stylesheet" type="text/css" href="css/productos.css">
+		<link rel="stylesheet" type="text/css" href="css/clientes.css">	
+	</head>
+	<body> <!-- Elemento que da forma al documento -->
+		<header>
+			<div class="contenedor">
+				<img src="images/cmico.png" alt="codeMaster" class="img_cm" />
+				<h1> codeMaster </h1>
+				<input type="checkbox" id="menu_bar">
+				<label for="menu_bar" id="menu_bardos"></label>
+				
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html"> Inicio </a></li>
+						<li><a href="recursos.html"> Recursos </a></li>				
+						<li><a href="acercade.html"> Acerca de </a></li>
+						<li><a href="contacto.html"> Contacto </a></li>		
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<section id="banner">
+				<img src="images/banner.jpeg">
+				<div class="contenedor">
+					<h2>Haz de tu negocio un 100% más productivo</h2>		
+				</div>				
+			</section>
+
+			<section id="servicios">
+				<h2> Nuestros servicios </h2>
+				<div class="contenedor" id="update">
+				</div>	
+			</section>
+
+			<section id="productos">
+				<h2> Nuestros productos</h2>
+				<div class="contenedor" id="update2">
+				
+				</div>				
+			</section>
+
+			<section id="clientes">
+				<h2> Nuestros clientes </h2>
+				<div class="contenedor" id="update3">
+					
+				</div>	
+			</section>
+
+			<section id="productos">
+				<h2> Nuestros socios</h2>
+				<div class="contenedor" id="update4">
+
+				</div>				
+			</section>						
+
+		</main>
+
+		<footer>
+			<div class="contenedor">
+				<p class="copyright">
+					codeMaster &copy; 2017 Todos los derechos reservados
+				</p>
+				<div class="sociales">
+					<a target="_blank" href="https://www.facebook.com/"><img src="images/facebook-icono.png"></a>
+					<a target="_blank" href="https://www.instagram.com/?hl=es-la"><img src="images/logo-instagram.png"></a>
+					<a target="_blank" href="https://twitter.com/afelipeaj"><img src="images/simbolo-de-twitter.png"></a>
+					<a target="_blank" href="https://plus.google.com/u/0/"><img src="images/simbolo-de-google-plus.png"></a>
+				</div>
+			</div>		 
+		</footer>
+		<script src="js/jquery.js"></script>
+		<script src="js/script2.js"></script>			
+	</body>
+</html>

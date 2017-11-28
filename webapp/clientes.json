@@ -1,0 +1,32 @@
+[
+  {
+    "name":"Grupo coomeva",
+    "link": "http://www.coomeva.com.co/ss/coomeva/digital/inicio.html",
+    "shortname": "coomeva.jpg"  
+  },
+  {
+    "name":"Vestra",
+    "link": "https://www.facebook.com/vestracolombia/",
+    "shortname": "vestra.png"  
+  },
+  {
+    "name":"Seguridad fortox",
+    "link": "http://fortoxsecurity.com/",
+    "shortname": "fortox.png"  
+  },
+  {
+    "name":"Bavaria",
+    "link": "http://www.bavaria.co/",
+    "shortname": "Bavaria.jpg"         
+  },
+  {
+    "name":"Argos",
+    "link": "https://www.argos.co/",
+    "shortname": "argos.jpg"         
+  },
+  {
+    "name":"Almacenes la 14",
+    "link": "http://www.la14.com/Tiendala14/Default.aspx",
+    "shortname": "almacenes14.jpeg"         
+  }    
+]

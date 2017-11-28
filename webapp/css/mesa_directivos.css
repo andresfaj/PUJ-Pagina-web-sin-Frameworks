@@ -1,0 +1,34 @@
+#mesa_directivos{
+	background: #585858;
+	color: #fff;
+	text-align: center;
+}
+
+#mesa_directivos img{
+	width: 100%;
+	height: 230px;
+	max-width: 280px;
+	margin-top: 10px;
+}
+
+#mesa_directivos ul{
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+#mesa_directivos a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#mesa_directivos ul li{
+	margin: 15px;
+}
+
+#mesa_directivos h2{
+	text-align: center;
+	padding: 10px;
+}

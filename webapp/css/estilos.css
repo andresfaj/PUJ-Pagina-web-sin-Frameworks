@@ -1,0 +1,182 @@
+/*
+p{} directamente para todas la etiquetas.
+.class{} sólamente se aplica el estilo a las etiquetas que tiene como atributo esta clase.
+#id{} esta sólo se aplica a una etiqueta, la razón es por que es un id es unico
+*{} -> es el selector universal
+
+ELEMENTOS
+-background -> fondo
+-background-color:;
+-background-image: url();
+-background-repeat:;
+-color -> color:orange;, color:#ff0000(rojo), color:rgb(255,0,0)(ROJO), color:rgba(255,0,0,.4);
+	color RGBA(red,green,blue,alfa), alfa= opacidad donde 0 es totalmente transparente, 1 es totalmente opaco
+	color HSL(Hue-matiz0-359,Saturation-saturación0-100%,Lightness-brillo0-100%)
+-font-family: tipo de letra;
+-font-size: tamaño de la letra;
+-font-weight: grosor de letra;
+-font-style: italic, oblique;
+-line-height: interlineado para un parrafo;
+-widht: Ancho de un div o section, p , y demas;
+-height: Altura de un div o section, p y demas;
+-border: Agrega borde a un elemento;
+	border: 1px solid;
+-position: Se posiciona segun su caja padre;	
+	position:relative; -> tambien se debe usar top:;, right:;, left:;, bottom;
+	position:absolute; -> bottom con left - top con right y asi sucesivamente se ubica en esquinas
+	position:fixed; -> lo posiciona con relaicion  a laventana del navegador
+	position:float; -> float:right,left,top,bottom; y se complementa con clear
+
+
+LONGITUDES
+-Absolutas -> cm, mm, in(pulgada), px, pt(punto), pc
+	Pixel no recomendada para responsive web design
+-Relativas -> em, rem, ex, ch, % (relacionada al tamaño de la fuente)
+	em es la más popular
+	html{font-size:40px;}
+	.unidad{font-size: 4rem;} -> en realidad seria 4rem * 40px = 160px, es decir relativa al tamaño de fuente raiz, suce igual con em	
+
+DISPLAY
+-block :ELemento div, tiene por defecto la propiedad display con valor block
+-inline: Las propiedades widht y height no afectan;
+-inline-block
+	div{
+		border:;
+		widht
+		height
+		display:inline-block;
+	}
+-none: los elementos se ocultan;
+
+MODELO DE CAJA
+	Cada elemento en la página es un caja. donde cada caja puede tener estos atributos:;
+		-ancho:width; 
+		-alto:height;  
+		-relleno:padding; -> padding-top,padding-left,padding-right,padding-bottom o padding: 40px 40px 40px 40px; o padding:40px 40px; o padding:40px;
+		-borde:border; tiene 3 propiedades, ancho, estilo, color, i.e -> border: 1px solid blue; (solid,double,dashed,dotted,none), top,left,right,bottom
+		-margen:margin; proporciona espacio y toma valores + y -
+
+PSEUDO-CLASES
+-link
+	a:link{color:blue;}
+-visited
+	a:visited{color:oliva;}
+-hover
+	a:hover{color:blue;}->cuando el mouse se ubica encima cambia el color
+-active
+	a:active{color:blue;}->cuando el mouse da click cambia el color
+-focus
+	a:focus{color:orange;} -> usada para eventos de teclado, aqui cambia el texto cuando se escribe en una caja de texto	
+-first-child
+	li:first-child{background:yellow;} -> Toma el primer hijo de la lista y le cambia el fondo
+-last-child
+-nth-child(2n) -> afecta elementos pares
+-nth-child(3n) -> afecta elementos impares
+
+PSEUDO-ELEMENTOS (::pseudoelementos)
+-::before
+	h1::before{content:"Before" background= orange;} -> Antes del elemento H1 pone lo del content
+-::after
+	h1::before{content:"Before" background= orange;} -> Despues del elemento H1 pone lo del content
+-::first-letter -> Representa al primer caracter del texto de un elemento
+-::first-line -> La primera linea de un elemento puede ser modificada
+
+LISTAS
+	-ordenas
+	<ul> <li> </ul>
+	-sin orden
+	<ol> <li> </ol>
+	-descriptivas
+	<dl>
+		<dt>
+			<dd>
+			</dd>	
+		</dt>
+	</dl>
+
+ul li{margin-left:40px;} -> todos los elementos li que esten debajo de el, se les pone una margen de 40px a la izquierda
+ul > li{margin-left:40px;} -> Solo los elementos li que pertenezcan a ul se les pone una margen de 40px a la izquierda
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*Se usa para que todo se contenga dentro del mismo modelo de caja, necesario para el responsive web design*/
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #333;
+	color: #fff;
+	/*necesario para que el menu siempre se mueva con el scroll*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.contenedor{
+	width: 98%;
+	margin: auto;
+}
+
+h1{
+	float: left;
+}
+
+header .contenedor{
+	display: table;
+}
+
+.contenedor .img_cm{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 7px 7px 7px 7px;
+}
+
+section{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.copyright{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+
+footer .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+
+.sociales{
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+}
+
+.sociales img{
+	max-width: 40px;
+}
+
+@media (min-width: 1024px) {
+
+	.contenedor{
+		width: 1000px;
+	}
+	
+}
+

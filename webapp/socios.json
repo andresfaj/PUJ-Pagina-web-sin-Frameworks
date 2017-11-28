@@ -1,0 +1,17 @@
+[
+  {
+    "name":"Microsoft Azure",
+    "link": "https://azure.microsoft.com/es-es/",
+    "shortname": "microsoft_azure_menu.jpg"  
+  },
+  {
+    "name":"Apache Hadoop",
+    "link": "http://hadoop.apache.org/",
+    "shortname": "hadoop_menu.jpg"  
+  },
+  {
+    "name":"Oracle",
+    "link": "https://www.oracle.com/database/index.html",
+    "shortname": "oracle_menu.jpg"  
+  }    
+]

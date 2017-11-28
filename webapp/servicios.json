@@ -1,0 +1,22 @@
+[
+  {
+    "name":"Internet of things",
+    "link": "iot.html",
+    "shortname": "iot_menu.jpg"  
+  },
+  {
+    "name":"Cognitive Services",
+    "link": "cognitive_services.html",
+    "shortname": "cognitive_services.jpeg"  
+  },
+  {
+    "name":"Big Data",
+    "link": "big_data.html",
+    "shortname": "big_data.png"  
+  },
+  {
+    "name":"Analytics",
+    "link": "analytics.html",
+    "shortname": "analytics.png"         
+  }
+]
